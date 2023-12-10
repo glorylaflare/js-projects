@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',monospace;
+    outline: none;
+  }
+
+  body {
+    min-height: 400px;
+    background: linear-gradient(to right, #00141e,#344d55);
+    background-position: center;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 20px;
+    height: 12vh;
+  }
+  
+  .page-title {
+    color:#ffffff;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color:#ffffff;
+    font-size: 14px;
+  }
+  
+  .container-bloco {
+    width: 300px;
+    height: 405px;
+    margin: auto;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    background-color: white;
+    padding: 20px 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.0), 0 6px 6px rgba(0,0,0,0.20);
+  }
+
+  .titulo-secundario {
+    font-size: 12px;
+    margin: 6px;
+    align-self: center;
+    font-weight: bold;
+    color: #00141e;
+  }
+
+  .barra-de-input {
+    padding: 8px;
+    border-radius: 11px;
+    border: 1px solid #00141e;
+  }
+
+  .botao-calcula {
+    padding: 14px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #00141e;
+    color: white;
+    border: 0px;
+    border-radius: 12px;
+    margin: 20px 0px;
+    cursor: pointer;
+  }
+
+  .resultado {
+    align-self: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #344d55;
+  }
+
+  .botao-calcula:hover {
+    background-color: #1e7ae4;
+  }
+
+  .page-logo {
+    width: 200px;
+    padding: 5vh;
+  }
+  
+  .alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
