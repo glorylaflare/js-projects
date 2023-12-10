@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',monospace;
+    outline: none;
+}
+
+body {
+    background: linear-gradient(180deg, #db0d10 0%, #00d4ff 100%);
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+  
+.container {
+    text-align: center;
+    padding: 20px;
+}
+  
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+  
+.page-subtitle {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.container-bloco {
+    width: 800px;
+    height: 135px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20vh;
+    border-radius: 3px 20px;
+    background-color: white;
+    padding: 10px 10px;
+    box-shadow: 0 10px 20px #00000000, 0 6px 6px #00000033;
+}
+
+input, select {
+    margin: 20px 5px 20px 0px;
+    padding: 4px;
+    border-radius: 10px;
+    border: 1px solid #d0d0d0;
+}
+
+.input-valor {
+    text-align: end;
+}
+
+.conversor {
+    padding: 3px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+button {
+    padding: 6px;
+    font-size: 12px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #82d466 0%, #3ada19 100%);
+    color: white;
+    border: 0px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to right, #44b0da,#216889);
+}
+
+.valorconvertido {
+    width: 650px;
+    font-size: 14px;
+    color: #292929;
+    font-weight: 100;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+    border: 1px solid #d0d0d0;
+    padding: 3px;
+    border-radius: 9px;
+}
+
+.valorinicial, .valorfinal {
+    font-size: 15px;
+    color: #292929;
+    padding: 0px 70px;
+}
+
+footer {
+    padding: 25px 0;
+    text-align: center;
+    margin-bottom: 50vh;
+}
+
+.page-logo {
+    width: 200px;
+}  

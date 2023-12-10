@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev 7 - Conversor de Tempratura - Aula 02</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">Conversor de Temperaturas</h1>
+        <p class="page-subtitle">Converta valores em Celsius, Fahrenheit ou Kelvin</p>
+    </div>                
+    <div class="container-bloco">
+        <label for="valor"></label>   
+        <input class="input-valor" type="number" id="valor" placeholder="1">
+
+        <label for="seletor-converte-de"></label>
+        <select name="seletor-converte-de" id="converte-de">
+            <option value="F">Fahrenheit (F)</option>
+            <option value="K">Kelvin (K)</option>
+            <option value="C">Celsius (C)</option>
+        </select>
+        <b class="conversor">➯</b>
+        <label for="seletor-converte-para"></label>
+        <select name="seletor-converte-para" id="converte-para">
+            <option value="C">Celsius (C)</option>
+            <option value="F">Fahrenheit (F)</option>
+            <option value="K">Kelvin (K)</option>
+        </select>
+
+        <label for="seletor-casas-decimais"></label>
+        <select name="seletor-casas-decimais" id="casas-decimais">
+            <option value="0">0 decimais</option>
+            <option value="1" selected>1 decimal</option>
+            <option value="2">2 decimais</option>
+            <option value="3">3 decimais</option>
+            <option value="4">4 decimais</option>
+            <option value="5">5 decimais</option>
+        </select>
+
+        <button type="submit" onclick="Converter()">Converter</button>
+        <h2 class="valorconvertido"><b class="valorinicial" id="valorInicial">1 °F</b> é igual a <b class="valorfinal" id="valorFinal">-17,2 °C</b></h2>
+    </div>
+
+    <footer class="imersaodev">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+    </footer>
+
+    <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
