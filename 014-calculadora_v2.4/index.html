@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮 Calculadora</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="switch" id="switch">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </div>
+      <div id="container">
+        <div class="display">
+          <div class="colors">
+            <i class="fa-solid fa-circle c-red"></i>
+            <i class="fa-solid fa-circle c-yel"></i>
+            <i class="fa-solid fa-circle c-grn"></i>
+          </div>
+          <div class="visualizer">
+            <div>
+              <p class="operations" id="operations">0</p>
+            </div>
+            <div>
+              <p class="result" id="result">0</p>
+            </div>
+          </div>
+        </div>
+        <div class="keys" id="keys">
+          <button data-action="clear" name="AC">
+            <div class="ac">
+              <i class="fa-solid fa-a"></i>
+              <i class="fa-solid fa-c"></i>
+            </div>
+          </button>
+          <button data-action="signal">
+            <i class="fa-solid fa-plus-minus"></i>
+          </button>
+          <button data-action="percent">
+            <i class="fa-solid fa-percent"></i>
+          </button>
+          <button data-action="divide">
+            <span id="signal" style="display: none;">÷</span>
+            <i class="fa-solid fa-divide"></i>
+          </button>
+      
+          <button class="key-number">7</button>
+          <button class="key-number">8</button>
+          <button class="key-number">9</button>
+          <button data-action="multiply">
+            <span id="signal" style="display: none;">×</span>
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+      
+          <button class="key-number">4</button>
+          <button class="key-number">5</button>
+          <button class="key-number">6</button>
+          <button data-action="subtract">
+            <span id="signal" style="display: none;">−</span>
+            <i class="fa-solid fa-minus"></i>
+          </button>
+      
+          <button class="key-number">1</button>
+          <button class="key-number">2</button>
+          <button class="key-number">3</button>
+          <button data-action="addition">
+            <span id="signal" style="display: none;">+</span>
+            <i class="fa-solid fa-plus"></i>
+          </button>
+      
+          <button data-action="delete" name="DEL">
+            <div class="del">
+              <i class="fa-solid fa-d"></i>
+              <i class="fa-solid fa-e"></i>
+              <i class="fa-solid fa-l"></i>
+            </div>
+          </button>
+          <button class="key-number zero">0</button>
+          <button data-action="decimal">
+            <i class="fa-solid fa-circle dot"></i>
+          </button>
+          <button data-action="calculate">
+            <i class="fa-solid fa-equals"></i>
+          </button>
+        </div>
+      </div>
+      <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+      <script src="./src/js/index.js"></script>
+      <script src="./src/js/switch.js"></script>
+</body>
+</html>
