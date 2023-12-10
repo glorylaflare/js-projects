@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imersão Dev - Aluraflix - Aula 05</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <div class="container">
+        <a href="https://alura.com.br/" target="_blank"><img src="https://i.ibb.co/m5ggBYH/aluraflix.png" alt="Logo da Aluraflix" class="alura-logo"></a>
+      </div>
+  
+      <div class="container">
+        <ul class="opcoes">
+          <li class="opcoes-itens">
+            <a href="#" class="opcoes-link">Início</a>
+          </li>
+          <li class="opcoes-itens">
+            <a href="#" class="opcoes-link">Filmes</a>
+          </li>
+          <li class="opcoes-itens">
+            <a href="#" class="opcoes-link">Séries</a>
+          </li>
+        </ul>
+      </div>
+  
+      <div class="container">
+        <a href="#" class="container-perfil" id="container-perfil">
+          <img src="https://i.ibb.co/6X01GC1/user.png" alt="Meu perfil" class="user-imagem">
+          <p class="container-texto">Minha Conta</p>
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="banner">
+        <h2 class="banner-titulo">Já pensou em criar uma coleção com os seus filmes favoritos?</h2>
+        <p class="banner-texto">Aqui você cria uma lista com seus filmes favoritos</p>
+        <div class="input-barra">
+          <input type="text" id="filme" class="filme-adicao" autocomplete="off" placeholder="Qual filme você deseja adicionar a sua lista...">
+          <button type="submit" onClick="adicionarFilme()" class="button-adicionar">╂</button>
+        </div>
+        <div id="resposta"></div>
+      </div>
+  
+      <div class="carrossel">
+        <div class="container">
+          <p class="lista-filmes">Seus favoritos</p>
+        </div>
+  
+        <div class="container-filmes">
+          <ul id="filmes-adicionados"></ul>
+        </div>
+  
+        <div class="container">
+          <p class="lista-filmes">Recomendados</p><b class="vermais">ver mais <b class="icon-seta">></b></b>
+        </div>
+  
+        <div class="container-filmes">
+          <ul id="filmes-fixos"></ul>
+        </div>
+      </div>
+    </main>
+  
+    <footer class="rodape">
+      <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    </footer>
+  
+    <script src="https://code.jquery.com/jquery-1.12.3.js" integrity="sha256-1XMpEtA4eKXNNpXcJ1pmMPs8JV+nwLdEqwiJeCQEkyc=" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
