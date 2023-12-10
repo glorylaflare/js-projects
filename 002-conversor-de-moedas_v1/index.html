@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imersão Dev Alura - Conversor de Moedas - Aula 02</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="page-title">Conversor de Moedas</h1>
+    <p class="page-subtitle">Converta valores das principais moedas do mundo.</p>
+  </div>
+  <div class="container-bloco">
+    <label for="valor">Valor</label>
+    <input class="input-padrao" type="number" id="valor" placeholder="0,00">
+
+    <label for="seletor-converte-de">Converter de:</label>
+    <select name="seletor-converte-de" id="converte-de">
+      <option value="dolar">Dólar (USD)</option>
+      <option value="euro">Euro (EUR)</option>
+      <option value="libra">Libra Esterlína (GBP)</option>
+      <option value="iene">Iene (JPY)</option>
+      <option value="peso">Peso (ARS)</option>
+      <option value="bitcoin">Bitcoin (BTC)</option>
+      <option value="real">Reais (BRL)</option>
+    </select>
+
+    <label for="seletor-converte-para">Converter para:</label>
+    <select name="seletor-converte-para" id="converte-para">
+      <option value="real">Reais (BRL)</option>
+      <option value="dolar">Dólar (USD)</option>
+      <option value="euro">Euro (EUR)</option>
+      <option value="libra">Libra Esterlína (GBP)</option>
+      <option value="iene">Iene (JPY)</option>
+      <option value="peso">Peso (ARS)</option>
+      <option value="bitcoin">Bitcoin (BTC)</option>
+    </select>
+    <button type="submit" onclick="Converter()">Converter</button>
+    <h2 class="valorconvertido">Resultado da conversão: <b class="valorfinal" id="valorConvertido">0,00</b></h2>
+  </div>
+
+  <footer class="imersaodev">
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt="">
+  </footer>
+
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
