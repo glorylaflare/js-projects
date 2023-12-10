@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔗 Encurtador de URL</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="primary-elements">
+          <div class="your-url-title">
+            <i class="fa-solid fa-link"></i>
+            <span>URL Original</span>
+          </div>
+          <input type="text" class="link-url">
+        </div>
+        <div class="secondary-elements">
+          <div class="tiny-url-title">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>URL Encurtado</span>
+          </div>
+          <input type="text" class="short-url" disabled>
+          <p class="url-copied">Link copiado!</p>
+        </div>
+        <div class="secondary-buttons">
+          <button class="acess-link">
+            <span>➦</span>
+          </button>
+          <button class="email-link">
+            <i class="fa-solid fa-envelope"></i>
+          </button>
+          <button class="qr-code">
+            <i class="fa-solid fa-qrcode"></i>
+          </button>
+          <div class="share-options">
+            <button class="share-link">
+              <span>Share</span>
+              <span class="share-link-menu">▾</span>
+            </button>
+            <div class="share-link-options">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+          </div>
+          <button class="copy-url">
+            <i class="fa-solid fa-copy"></i>
+            <span>Copiar</span>
+          </button>
+        </div>
+        <hr>
+        <button class="shorten-url">Encurtar URL</button>
+      </div>
+      
+      <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+      <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+      <script src="./src/js/index.js"></script>
+</body>
+</html>
