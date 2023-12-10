@@ -1,0 +1,269 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;800&family=Outfit:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background-color: #ebebc0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #101010;
+  padding: 5px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  margin: 10px 0;
+}
+
+.header h1 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.header .search-games input {
+  width: 300px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+}
+
+.header .search-games button {
+  padding: 5px 20px;
+  border-radius: 20px;
+  border: none;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 191, 255, 1) 5%,
+    rgba(33, 134, 255, 1) 95%
+  );
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+.game-on-screen {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: column;
+  width: 350px;
+  padding-left: 50%;
+  padding-top: 30px;
+}
+
+.game-on-screen img {
+  object-fit: cover;
+  width: 350px;
+  height: 300px;
+  border-radius: 30px 30px 0 0;
+}
+
+.infos {
+  background-color: black;
+  width: 350px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px 40px 30px 40px;
+  border-radius: 30px;
+  position: relative;
+  top: -40px;
+}
+
+.infos .game-name {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.infos .developer-name {
+  font-size: 11px;
+  padding: 0 0 15px 0;
+  color: gray;
+}
+
+.infos .ratings {
+  background-color: #101010;
+  width: 130%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  font-weight: 600;
+}
+
+.ratings .game-metacritic,
+.ratings .game-critic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ratings .game-metacritic span,
+.ratings .game-critic span {
+  background-color: #3fcf3f;
+  color: black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.genres {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #252525;
+  max-width: 100%;
+  margin: 15px 0;
+  padding: 4px 25px;
+  border-radius: 15px;
+}
+
+.genres ol {
+  display: flex;
+  gap: 30px;
+  font-size: 12px;
+  list-style: none;
+  color: #9f9f9f;
+}
+
+.game-on-screen button {
+  padding: 10px 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background: linear-gradient(
+    180deg,
+    rgba(37, 191, 255, 1) 5%,
+    rgba(33, 134, 255, 1) 95%
+  );
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 1px 10px rgba(33, 134, 255, 1);
+  cursor: pointer;
+  position: relative;
+}
+
+.container-2 .games-saved {
+  display: flex;
+  justify-content: end;
+  padding-right: 25%;
+  background-color: black;
+  padding-top: 30px;
+  width: 200px;
+  border-radius: 50px 0 0 0px;
+  height: 120vh;
+}
+
+.list-game-saved {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: -240px;
+}
+
+.list-game-saved ol {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-game-saved ol li {
+  margin-bottom: -15px;
+}
+
+.game-listed img {
+  width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 3px solid #555555;
+}
+
+.game-listed p {
+  position: relative;
+  top: -35px;
+  font-size: 10px;
+  color: white;
+  font-weight: 500;
+  padding: 3px 3px 4px 15px;
+  margin: 0px 10px;
+  background-color: rgba(15, 15, 15, 0.6);
+  border-radius: 15px;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+.list-game-saved span {
+  color: white;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: -5px;
+  width: 200px;
+  text-wrap: nowrap;
+  text-align: center;
+}
+
+button:active {
+  top: 1px;
+}
+
+/* error message */
+
+.error-msg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 500px;
+  margin-top: -100px;
+  font-size: x-large;
+}

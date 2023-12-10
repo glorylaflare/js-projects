@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Alura Games</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo alura" class="alura-logo">
+        <div class="header">
+          <h1>
+            <i class="fa-solid fa-gamepad"></i>
+            Alura Games
+          </h1>
+          <div class="search-games">
+            <input type="text" placeholder="Nome do jogo" id="game-name">
+            <button id="search-game">Buscar</button>
+          </div>
+        </div>
+        <div class="container-2">
+          <div class="game-on-screen"></div>
+          <div class="games-saved">
+            <div class="list-game-saved">
+              <span>Meus favoritos</span>
+              <ol id="my-favorite"></ol>
+            </div>
+          </div>
+        </div>
+        <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+        <script src="./src/js/index.js"></script>
+</body>
+</html>
