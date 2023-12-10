@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔑 Gerador de Senhas</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+  </head>
+  <body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"
+      rel="stylesheet"
+    />
+    <div class="container">
+      <h2>Gerador de senhas</h2>
+      <div class="wrapper">
+        <div class="input-box">
+          <input type="text" disable />
+          <span class="material-symbols-rounded">copy_all</span>
+        </div>
+        <div class="pass-indicator"></div>
+        <div class="pass-length">
+          <div class="details">
+            <label class="title">Número de caracteres</label>
+            <span></span>
+          </div>
+          <input type="range" min="4" max="32" value="12" step="1" />
+        </div>
+        <div class="pass-settings">
+          <label class="title">Configurações</label>
+          <ul class="options">
+            <li class="option">
+              <input type="checkbox" id="lowercase" checked />
+              <label for="lowercase">Minusculas(a-z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="uppercase" checked />
+              <label for="uppercase">Maiúsculas(A-Z)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="numbers" checked />
+              <label for="numbers">Números(0-9)</label>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="symbols" />
+              <label for="symbols">Símbolos(!@#^$%*&)</label>
+            </li>
+          </ul>
+        </div>
+        <button class="generate-button">Gerar senha</button>
+      </div>
+    </div>
+    <div class="info-link">
+      <a
+        class="link"
+        href="https://super.abril.com.br/coluna/oraculo/quanto-tempo-um-hacker-demoraria-para-descobrir-minhas-senhas"
+        target="_blank"
+        >Quão segura é a minha senha?</a
+      >
+    </div>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

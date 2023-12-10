@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-color: #fe3d65;
+  --secondary-color: #f3ffeb;
+  --font-color: #254469;
+
+  --border-color: #d4dbe5;
+
+  --light-gray: #aaaaaa;
+  --dark-gray: #4f4f4f;
+
+  --check-green: #43a047;
+
+  --weakPass-color: #e51414;
+  --mediumPass-color: #ffa500;
+  --strongPass-color: #008000;
+  --veryStrongPass-color: #004000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--font-color);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--primary-color);
+}
+
+.container {
+  width: 450px;
+  background: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.container h2 {
+  font-weight: 800;
+  font-size: 23px;
+  padding: 15px 28px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.wrapper {
+  margin: 20px 28px;
+}
+
+.wrapper .input-box {
+  position: relative;
+}
+
+.input-box input {
+  width: 100%;
+  height: 53px;
+  color: var(--font-color);
+  background: none;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 1.4px;
+  border: 1px solid var(--light-gray);
+  padding: 0 45px 0 16px;
+}
+
+.input-box span {
+  position: absolute;
+  right: 13px;
+  cursor: pointer;
+  line-height: 53px;
+}
+
+.input-box span:hover {
+  color: var(--check-green) !important;
+}
+
+.wrapper .title {
+  font-weight: 500;
+}
+
+.wrapper .pass-indicator {
+  width: 100%;
+  height: 4px;
+  position: relative;
+  margin-top: 14px;
+  border-radius: 25px;
+}
+
+.pass-indicator::before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
+
+.pass-indicator#weak::before {
+  width: 20%;
+  background: var(--weakPass-color);
+}
+.pass-indicator#medium::before {
+  width: 50%;
+  background: var(--mediumPass-color);
+}
+.pass-indicator#strong::before {
+  width: 80%;
+  background: var(--strongPass-color);
+}
+.pass-indicator#veryStrong::before {
+  width: 100%;
+  background: var(--veryStrongPass-color);
+}
+
+.wrapper .pass-length {
+  margin: 25px 0 30px;
+}
+
+.pass-length .details {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.pass-length input {
+  width: 100%;
+  height: 3px;
+}
+
+.pass-settings .options {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+.pass-settings .options .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  width: calc(100% / 2);
+}
+
+.options .option:first-child {
+  pointer-events: none;
+}
+
+.options .option input {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.options .option label {
+  cursor: pointer;
+  color: var(--dark-gray);
+  padding-left: 8px;
+}
+
+.wrapper .generate-button {
+  width: 100%;
+  color: var(--secondary-color);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--primary-color);
+  font-size: 17px;
+  padding: 16px 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin: 16px 0 10px;
+}
+
+.wrapper .generate-button:active {
+  position: relative;
+  top: 1px;
+}
+
+.info-link {
+  margin-top: 20px;
+  font-weight: 500;
+}
