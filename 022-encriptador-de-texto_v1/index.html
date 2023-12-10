@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐 Encriptador de Texto</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>
+            <span class="material-symbols-outlined title">
+                encrypted
+            </span>
+            Encriptador de Texto
+        </h2>
+        <div class="inner_container">
+            <label for="message">
+                <span class="material-symbols-outlined symbol">
+                    chat
+                </span>
+                Mensagem:
+            </label>
+            <textarea id="message" 
+                rows="7"
+                cols="40"></textarea>
+            <label for="key">
+                <span class="material-symbols-outlined symbol">
+                    key
+                </span>
+                Chave:
+            </label>
+            <input type="text" id="key" value="YksHx8A7QW3XnaD">
+            <div class="buttons">
+                <button id="enc-btn">Encrypt</button>
+                <button id="dec-btn">Decrypt</button>
+            </div>
+    
+            <label for="result" class="result_title">
+                <span class="material-symbols-outlined symbol">
+                    mode_comment
+                </span>
+                Resultado:
+            </label>
+            <div class="result" id="result"></div>
+            <span class="material-symbols-outlined copy" id="copy_all">
+                copy_all
+            </span>
+        </div>
+    </div>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

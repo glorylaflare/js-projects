@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #102813;
+    color: #27582d;
+}
+
+.container {
+    width: 500px;
+}
+
+h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 25px;
+    font-weight: 800;
+    text-align: center;
+    background-color: #27582d;
+    color: #f4f1eb;
+    padding: 10px 0;
+}
+
+.material-symbols-outlined.title {
+    font-size: 30px;
+}
+
+.inner_container {
+    width: 500px;
+    background-color: #f4f1eb;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    border: 1px solid #27582d;
+    resize: none;
+    background-color: #f4f1eb;
+    color: #27582d;
+}
+
+input::placeholder {
+    color: #27582dcb;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 15px;
+    width: 50%;
+    margin-bottom: 5px;
+    border: 1px solid #27582d;
+    border-bottom: 3px solid #27582d;
+    background-color: #ffb541;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button + button {
+    background-color: #e28192;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    position: relative;
+    top: 1px;
+}
+
+.result_title {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.result {
+    font-size: 15px;
+    border: 1px solid #27582d;
+    padding: 10px 35px 10px 10px;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 6px;
+    color: #27582d;
+    overflow-wrap: break-word;
+}
+
+.material-symbols-outlined.symbol {
+    font-size: 15px;
+}
+
+.material-symbols-outlined.copy {
+    position: relative;
+    top: -90px;
+    left: 410px;
+    color: #27582d;
+    margin-bottom: -20px;
+    margin-right: 100vh;
+    cursor: pointer;
+    user-select: none;
+}
+
+.material-symbols-outlined.copy:active {
+    opacity: .8;
+}
