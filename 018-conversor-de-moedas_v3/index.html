@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev 8 - Conversor de Moedas - Aula 01</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="logo alura" class="alura-logo">
+        <h2>Conversor de Moedas</h2>
+        <i>Descubra os valores de várias moedas ao redor do mundo em reais.</i>
+        <div class="currency-selector">
+          <div class="flag-currency">
+            <img src="https://cdn-icons-png.flaticon.com/512/299/299985.png" alt="" id="currency-flag">
+            <select name="select-from" id="select-from">
+              <option value="USD">USD</option>
+              <option value="CAD">CAD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="CHF">CHF</option>
+              <option value="RUB">RUB</option>
+              <option value="ARS">ARS</option>
+              <option value="JPY">JPY</option>
+              <option value="CNY">CNY</option>
+              <option value="ZAR">ZAR</option>
+              <option value="AUD">AUD</option>
+            </select>
+          </div>
+          <input class="value-to-convert" type="number" placeholder="0,00">
+        </div>
+        <div class="currency-BRL">
+          <div class="flag-currency">
+            <img src="https://cdn-icons-png.flaticon.com/512/551/551856.png" alt="Reais">
+            <p>BRL</p>
+          </div>
+          <span class="value-converted">0,00</span>
+        </div>
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="imersão dev">
+      </div>
+      <script src="./src/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(219, 195, 172, 1) 5%,
+    rgba(217, 168, 122, 1) 95%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15vh auto;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+h2 {
+  font-size: 35px;
+  color: #222222;
+}
+
+i {
+  font-size: 11px;
+  color: #333333;
+  margin-bottom: 20px;
+  font-style: normal;
+}
+
+.currency-selector,
+.currency-BRL {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #e2c9b0ff;
+  border: 1px solid #ddc4ad;
+  padding: 20px;
+  gap: 50px;
+
+  width: 450px;
+}
+
+.currency-selector {
+  border-radius: 10px 10px 0 0;
+}
+
+.currency-BRL {
+  border-bottom: 5px solid #ffffff;
+}
+
+.flag-currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.currency-selector img,
+.currency-BRL img {
+  width: 70px;
+  height: 70px;
+}
+
+select,
+p {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 300;
+  color: #786a5d;
+}
+
+input,
+span {
+  display: flex;
+  justify-content: end;
+  width: 150px;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+  font-weight: 200;
+  text-align: right;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input {
+  color: #cc2020;
+}
+
+input::placeholder {
+  color: #c5af9b;
+}
+
+span {
+  color: #786a5d;
+}
+
+.page-logo {
+  margin-top: 20px;
+  width: 180px;
+}
