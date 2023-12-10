@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(250,242,243);
+    background: linear-gradient(180deg, rgba(250,242,243,1) 52%, rgba(210,246,189,1) 72%, rgba(95,255,76,1) 94%);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    height: 650px;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.title > span {
+    font-size: 10px;
+}
+
+.valor-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #d6efdc;
+
+    font-weight: 600;
+    font-size: 17px;
+
+    overflow : 'hidden'
+}
+
+input::placeholder {
+    font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.countries {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 0 2px;
+    gap: 8px;
+}
+
+.countries > i {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 4px;
+}
+
+.countries img {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    width: 45px;
+}
+
+select {
+    padding: 20px -5px 20px 0;
+    border: none;
+    margin-bottom: 10px;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.converte-de, 
+.converte-para {
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    border-radius: 15px;
+    border: 1px solid #d6efdc;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 5px 15px;
+    background-color: #d6efdc;
+    border: none;
+    border-radius: 10px;
+}
+
+.result .valores {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.result .variacao {
+    margin: 5px 0;
+    font-size: 11px;
+    font-weight: 800;
+    color: #1d3b53;
+}
+
+#chartContainer {
+    display: flex;
+    margin-top: 40px;
+}
+
+.canvasjs-chart-credit {
+    display: none;
+}
+
+.canvasjs-chart-tooltip {
+    right: 5px !important;
+    left: auto !important;
+    top: 5px !important;
+    bottom: auto !important;
+}

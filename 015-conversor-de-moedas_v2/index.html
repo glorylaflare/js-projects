@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪙 Conversor de Moedas</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>Conversor de Moedas</p>
+            <span>Converta valores das principais moedas do mundo.</span>
+        </div>
+        <input type="number" class="valor-input" min="0" placeholder="Insira o valor aqui...">
+        <div class="countries">
+            <div class="converte-de">
+                <img src="./src/imgs/USD.png">
+                <select name="seletor-de" id="converte-de">
+                    <option value="USD">USD</option>
+                    <option value="BRL">BRL</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="ARS">ARS</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CNY">CNY</option>
+                    <option value="INR">INR</option>
+                    <option value="BTC">BTC</option>
+                </select>
+            </div>
+            <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            <div class="converte-para">
+                <img src="./src/imgs/BRL.png">
+                <select name="seletor-para" id="converte-para">
+                    <option value="BRL">BRL</option>
+                    <option value="USD">USD</option>
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="ARS">ARS</option>
+                    <option value="JPY">JPY</option>
+                    <option value="CNY">CNY</option>
+                    <option value="INR">INR</option>
+                </select>
+            </div>
+        </div>
+        <div class="result">
+            <div class="valores">
+                <p id="valor-convertido"></p>
+            </div>
+            <div class="variacao">
+                <p><span id="valor-variacao"></span> última variação</p>
+            </div>
+        </div>
+        <div class="graph">
+            <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+    <script src="./src/js/conversor_base.js"></script>
+    <script src="./src/js/conversor_tabela.js"></script>
+</body>
+</html>
