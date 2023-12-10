@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imersão Dev 7 - Mentalista - Aula 3</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">O CÓDIGO SECRETO</h1>
+        <p class="page-subtitle">Descubra a senha de 4 dígitos</p><br>
+        <input type="number" id="valor-a" min="0" max="9" placeholder="0" />
+        <input type="number" id="valor-b" min="0" max="9" placeholder="0" disabled />
+        <input type="number" id="valor-c" min="0" max="9" placeholder="0" disabled />
+        <input type="number" id="valor-d" min="0" max="9" placeholder="0" disabled />
+        <br>
+    
+        <button type="submit" id="botao-chutar" onclick="Chutar()">Chutar</button>
+        <button type="submit" onclick="Reiniciar()">Reiniciar</button>
+        <h2 class="resultado" id="resultado"></h2>
+        <p class="page-info">Cada dígito vai de 0 a 9, você terá doze chances para acertar o código.</p>
+        <p class="page-info">Apenas um dígito por vez.</p><br>
+      </div>
+    
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721220.png" class="cofre" alt="">
+      <footer class="imersaodev">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-mentalista.svg" class="page-logo" alt="">
+      </footer>
+    
+      <a href="https://alura.com.br/" target="_blank">
+        <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+        <script src="./src/js/index.js"></script>
+</body>
+</html>
