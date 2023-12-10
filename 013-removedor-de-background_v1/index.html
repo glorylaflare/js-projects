@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔥 Burn.bg</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+          <i class="fa-solid fa-fire-flame-curved"></i>
+          <span style="font-family: 'Borel', sans-serif;">burn.bg</span>
+        </div>
+        <div class="upload-bar">
+          <label for="file-input">
+            <span></span>
+            <i class="fa-solid fa-upload"></i>
+            <text>Upload File</text>
+          </label>
+          <input type="file" id="file-input" name="file-input" accept=".jpg, .jpeg, .png" multiple />
+          <p>
+            O tamanho máximo não pode exceder 5 MB
+            <i class="fa-solid fa-circle-info"></i>
+          </p>
+        </div>
+        <div class="infos">
+          <div class="result">
+            <p>Visualização</p>
+            <img src="" alt="" srcset="" id="transformed-img">
+          </div>
+          <div class="buttons-visualizer">
+            <div class="original-img">
+              <img src="https://img.freepik.com/free-photo/abstract-surface-textures-white-concrete-stone-wall_74190-8189.jpg?size=626&ext=jpg&ga=GA1.1.1222169770.1701648000&semt=ais" alt="" srcset="" id="original-img">
+              <p>
+                <i class="fa-solid fa-image"></i>
+                Imagem original
+              </p>
+            </div>
+            <div>
+              <button id="transform-button">Remover</button>
+              <p class="text-button">
+                Remover o fundo da imagem
+                <i class="fa-solid fa-circle-info"></i>
+              </p>
+            </div>
+            <div>
+              <button id="download-button">Download</button>
+            </div>
+            <div class="rating">
+              <p>Avalie o resultado:
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-face-frown"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+      <script src="./src/js/index.js"></script>
+</body>
+</html>
