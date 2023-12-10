@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌡️ Conversor de Temperatura</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <div class="main_title">
+            <i class="fa-solid fa-chevron-left"></i>
+            <h2>Conversor</h2>
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </div>
+          <div class="inputs">
+            <div class="set_temperature" id="set-temperature">
+              <p class="">Celsius</p>
+              <p class="active">Fahrenheit</p>
+              <p class="">Kelvin</p>
+            </div>
+            <input type="number" placeholder="Digite o valor aqui..." id="valor-temperatura">
+          </div>
+        </div>
+        <div class="temperature">
+          <div class="outside_circle" id="outside-circle">
+            <div class="inside_circle" id="inside-circle">20°</div>
+          </div>
+        </div>
+        <div class="converter">
+          <ol class="selector" id="selector">
+            <li class="celsius">
+              <input type="checkbox" id="celsius" checked>
+              <p class="active">
+                <i class="fa-solid fa-droplet"></i>
+              </p>
+              <span>Celsius</span>
+            </li>
+            <li class="fahrenheit">
+              <input type="checkbox" id="fahrenheit">
+              <p>
+                <i class="fa-solid fa-wind"></i>
+              </p>
+              <span>Fahrenheit</span>
+            </li>
+            <li class="kelvin">
+              <input type="checkbox" id="kelvin">
+              <p>
+                <i class="fa-regular fa-sun"></i>
+              </p>
+              <span>Kelvin</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+      <script src="./src/js/index.js"></script>
+</body>
+</html>

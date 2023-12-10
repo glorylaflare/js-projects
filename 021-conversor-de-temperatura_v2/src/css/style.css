@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+    --branco: #ffffff;
+    --branco-2: #e9e9e9;
+    --cinza-claro: #c4c4c4;
+    --cinza-claro-2: #a9a9a9;
+    --cinza-escuro: #292929;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    user-select: none !important;
+}
+
+body {
+    background-color: #dedede;
+    opacity: 0.9;
+    background-image: repeating-radial-gradient(circle at 0 0,
+            transparent 0,
+            #dedede 10px),
+        repeating-linear-gradient(#ababab55, #ababab);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 280px;
+    height: 540px;
+    padding: 20px 0;
+    background-color: var(--branco);
+    border-radius: 30px;
+    border: 1px solid var(--cinza-claro);
+    box-shadow: 0 0 50px 5px var(--cinza-claro);
+}
+
+.main_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main_title h2 {
+    font-family: "Pacifico", cursive;
+    font-size: 25px;
+    font-weight: 400;
+    color: #292929;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputs input {
+    height: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--cinza-claro-2);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.inputs input::placeholder {
+    font-size: 12px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.inputs .set_temperature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.set_temperature p {
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 10px;
+    background-color: var(--branco-2);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+p.active,
+li>p.active {
+    background-color: var(--cinza-escuro);
+    color: var(--branco);
+}
+
+.temperature {
+    margin: 30px 0;
+}
+
+.outside_circle {
+    padding: 25px;
+    background: linear-gradient(273deg,
+            rgba(131, 250, 209, 1) 9%,
+            rgba(119, 153, 255, 1) 95%);
+    border-radius: 50%;
+    border: none;
+}
+
+.inside_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 140px;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 1) 40%,
+            rgba(155, 228, 255, 1) 95%);
+    border-radius: 50%;
+    font-size: 40px;
+    font-weight: 500;
+    box-shadow: inset 0 0 5px 2px var(--branco);
+}
+
+.converter>ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+ol>li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    width: 70px;
+    height: 120px;
+    max-width: 70px;
+    border-radius: 20px;
+}
+
+.celsius,
+.fahrenheit,
+.kelvin {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.celsius {
+    background: linear-gradient(180deg,
+            rgba(94, 234, 255, 1) 20%,
+            rgba(14, 193, 219, 1) 95%);
+}
+
+.fahrenheit {
+    background: linear-gradient(180deg,
+            rgba(136, 251, 204, 1) 20%,
+            rgba(38, 255, 166, 1) 95%);
+}
+
+.kelvin {
+    background: linear-gradient(180deg,
+            rgba(254, 145, 107, 1) 20%,
+            rgba(251, 89, 32, 1) 95%);
+}
+
+.celsius p,
+.fahrenheit p,
+.kelvin p {
+    background-color: var(--branco);
+    color: var(--cinza-escuro);
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol input {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+}
+
+.celsius input {
+    background-color: #1bbcd3;
+}
+
+.fahrenheit input {
+    background-color: #58e7ac;
+}
+
+.kelvin input {
+    background-color: #f86c3a;
+}
+
+ol input::before {
+    content: "";
+    background-color: var(--cinza-escuro);
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    border-radius: inherit;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    opacity: 0.3;
+}
+
+ol input:checked::before {
+    left: 23px;
+    opacity: 1;
+}
