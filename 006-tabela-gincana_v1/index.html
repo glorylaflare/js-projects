@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🏓 Gincana</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>     
+    <body>
+    <h1 class="page-title">Gincana Alura</h1>
+    <p class="page-subtitle">Crie sua própria tabela com equipes personalizadas</p>
+    
+    <input type="text" id="nomeEquipe" name="nomeEquipe" placeholder="Insira um nome">
+    <button onClick="adicionarEquipe()">Adicionar Equipe</button>
+    <button onClick="zerarPontos()">Zerar Pontuação</button>
+    <br></br>
+    
+    <table>
+        <thead>
+        <tr>
+            <th class="equipe">Equipe</th>
+            <th class="provas">Provas Concluídas</th>
+            <th class="primeiro">Primeiro Lugar</th>
+            <th class="segundo">Segundo Lugar</th>
+            <th class="terceiro">Terceiro Lugar</th>
+            <th class="pontos">Pontos</th>
+            <th class="acoes" colspan="3">Medalhas</th>
+        </tr>
+        </thead>
+        <tbody id="tabelaEquipes"></tbody>
+    </table>
+    
+    <br></br>
+    
+    <footer class="rodape">
+        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+    </footer>
+    
+    <a href="https://alura.com.br/" target="_blank"><img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo"></a>
+    
+    <script src="./src/js/index.js"></script>
+</body>
+</html>

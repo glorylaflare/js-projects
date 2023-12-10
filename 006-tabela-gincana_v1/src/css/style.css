@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Poppins:wght@100;300;500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", monospace;
+  outline: none;
+  text-align: center;
+  color: #ffffff;
+}
+
+:root {
+  --preto: rgb(0, 0, 0);
+  --branco: rgb(255, 255, 255);
+  --cinza: rgb(221, 221, 221);
+  --coluna-impar: rgb(73, 143, 224);
+  --coluna-par: rgb(228, 200, 77);
+  --ouro: rgb(243, 230, 42);
+  --prata: rgb(223, 222, 222);
+  --bronze: rgb(209, 98, 7);
+}
+
+body {
+  min-height: 400px;
+  background-image: url("https://www.nw.edu/wp-content/uploads/2022/05/health-care-career-training-medical-assistant-dental-assistant-west-covina-van-nuys-riverside-long-beach-glendale-41.jpg");
+  background-color: var(--preto);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Cabeçalho */
+
+.page-title {
+  color: var(--branco);
+  margin-top: 1.5em;
+}
+
+.page-subtitle {
+  color: var(--branco);
+  margin-bottom: 0.5em;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* Campo de criação */
+
+button {
+  color: var(--preto);
+  padding: 10px 10px;
+  cursor: pointer;
+}
+
+input {
+  padding: 10px 5px;
+  color: var(--preto);
+}
+
+/* Tabela */
+
+table {
+  width: 80%;
+  border-collapse: separate;
+  border-spacing: 5px;
+  margin: auto;
+}
+
+th,
+tr,
+td {
+  padding: 8px 30px;
+  margin: 20px;
+  color: var(--preto);
+}
+
+.equipe,
+.primeiro,
+.terceiro,
+.acoes {
+  background: var(--coluna-impar);
+  color: var(--branco);
+}
+
+.provas,
+.segundo,
+.pontos {
+  background: var(--coluna-par);
+  color: var(--preto);
+}
+
+.coluna-eqp,
+.coluna-pou,
+.coluna-pot,
+.coluna-acao {
+  background: var(--branco);
+}
+
+.coluna-pro,
+.coluna-pod,
+.coluna-pts {
+  background: var(--cinza);
+}
+
+.coluna-eqp,
+.coluna-pts {
+  font-weight: bold;
+}
+
+#tabelaEquipes {
+  font-style: italic;
+}
+
+.botao-acao {
+  background: var(--branco);
+  color: var(--preto);
+  margin: 2px 0;
+  border-radius: 50%;
+  padding: 8px 13px;
+  border: 1px solid var(--preto);
+}
+
+.botao-pou:hover {
+  background: var(--ouro);
+  font-weight: bold;
+}
+
+.botao-pod:hover {
+  background: var(--prata);
+  font-weight: bold;
+}
+
+.botao-pot:hover {
+  background: var(--bronze);
+  font-weight: bold;
+}
+
+/* Rodapé */
+
+.rodape {
+  bottom: 0px;
+  padding-top: 0.2em;
+  height: 1em;
+  text-align: center;
+}
+
+.page-logo {
+  width: 120px;
+}
