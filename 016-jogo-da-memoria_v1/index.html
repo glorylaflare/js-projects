@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦁 Jogo da Memória</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="game"></div>
+        <div class="infos">
+            <div class="timer">
+                <div class="timer-info">
+                    <p id="countdown">00:00</p>
+                    <span>
+                        <i class="fa-regular fa-clock"></i>
+                        Timer
+                    </span>
+                </div>
+            </div>
+            <button class="reset" onclick="history.go(0)">
+                <i class="fa-solid fa-rotate-left"></i>
+                Reset
+            </button>
+        </div>
+        <div class="end-game"></div>
+    </div>
+    <script src="https://kit.fontawesome.com/8265838916.js" crossorigin="anonymous"></script>
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
