@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@200;300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    63deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(219, 219, 219, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 4vh auto;
+  width: 800px;
+  background-color: #ffffff;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.7);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 8px 0px;
+}
+
+.title h2 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 32px;
+  color: #0077ff;
+}
+
+.title p {
+  font-size: 13px;
+}
+
+.game-board {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15px 5px 0;
+}
+
+.board {
+  width: 510px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+  padding: 10px;
+}
+
+.tips {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.card {
+  width: 130px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  border: 1px solid #d3d3d3;
+  border-radius: 15px;
+  padding: 0px 20px;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.card + .card {
+  transform: rotateY(180deg);
+  transition: 0.3s;
+}
+
+.card + .card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #2f4f4f;
+  border-radius: 15px;
+  transition: 0.3s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.card.cardTip {
+  transform: rotateY(0deg);
+}
+
+.card + .cardTip::after {
+  transform: rotateY(180deg);
+}
+
+.input-answer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5px;
+}
+
+.input-answer p {
+  font-size: 12px;
+}
+
+.input-answer input {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #d3d3d3;
+  padding: 5px;
+  text-align: center;
+  font-weight: 600;
+  color: #0077ff;
+}
+
+[class^="person"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  border: 1px solid #d3d3d3;
+  cursor: pointer;
+}
+
+[class^="person"] img {
+  width: 80px;
+}
+
+[class^="person"] span {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+.no-person {
+  filter: grayscale(1);
+}
